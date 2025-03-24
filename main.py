@@ -159,6 +159,7 @@ class Player(pygame.sprite.Sprite):
         self.power_time = pygame.time.get_ticks()
 
         self.mini_img = p.transform.scale(self.image, (20,20))
+
     def shoot(self):
         now = pygame.time.get_ticks()
         if now - self.last_shot > self.shoot_delay:
